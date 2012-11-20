@@ -1,0 +1,115 @@
+#General
+taskId:         bionlp2011-genia09-multiparse
+events: \
+    * Regulation,Positive_regulation,Negative_regulation : Protein,Event; \
+    Gene_expression,Transcription,Protein_catabolism,Phosphorylation,Localization,Binding: Protein;
+
+#Datasets
+train:          /Users/riedelcastro/projects/refectorie/proj/bionlp2011/data/corpora/training
+test:           /Users/riedelcastro/projects/refectorie/proj/bionlp2011/data/corpora/test
+dev:            /Users/riedelcastro/projects/refectorie/proj/bionlp2011/data/corpora/development
+
+#parsing configuration
+useEnju:        true
+useMcClosky:    false
+useMultiParseFeatures: true
+depNames:       enju
+depNamesHeads:  enju
+enjuDir:        /Users/riedelcastro/projects/refectorie/proj/bionlp2011-st/data/parses/genia09/enju-parses/
+depNames:       enju
+
+
+#mcclosky parsing configuration
+rerankparser:   /Users/riedelcastro/opt/reranking-parser
+biomodel:       /Users/riedelcastro/opt/reranking-parser/biomodel
+loadParses:     true
+parseDir:       /Users/riedelcastro/projects/refectorie/proj/bionlp2011-st/data/parses/genia/umass-mccc-parses/
+
+#eval script directory with a2-normalize.pl and a2-evaluate.pl
+evalScriptDir:  /Users/riedelcastro/projects/refectorie/proj/bionlp2011-st/3rdparty
+
+#trigger word dict file
+triggerDictFile:    /Users/riedelcastro/projects/refectorie/proj/bionlp2011-st/dictionaries/genia-trigger-09.txt
+entityDictFile:     /Users/riedelcastro/projects/refectorie/proj/bionlp2011-st/dictionaries/genia-entity-09.txt
+
+#preprocessing
+depAugment:     true
+depFix:         false
+
+#stacking
+stackingDir:    /Users/riedelcastro/projects/refectorie/proj/bionlp2011-st/data/predictions/genia/stanford/2011.02.26-train-withA1
+useStacked:     false
+
+#event resolution from link graph
+groupBySyntax:      false
+groupByPrediction:  true
+fixNonTransitivity: true
+ignoreRoleForNonTransitivityFix: false
+
+#module configuration
+useSiblings:        false
+onlyEntitySiblings: true
+useParents:         false  
+onlyEntityParents:  true
+themeModule:	    coordinated
+#themeModule:        triggerAwareCoordinated
+predictBindingPairs: true
+coordinateHyphens:  true
+coordinateSlashes:  true
+coordinateConj:     false
+asymmetry:          false
+antiTransitivity:   false
+postprocess:	    false
+
+#inference config
+subgradientSteps:   100
+
+#train config
+epochs:         5
+docs:           20
+split:          0.8
+folds:          1
+shuffle:	    false
+lossAugment:    false
+forTrain:       dev
+forTest:        dev
+average:	    true
+
+#gold solution
+learnTransitive: false
+
+
+#loss function
+fpLoss:		3.8
+fnLoss:		10
+otherLoss:	10
+fpBindingLoss: 3.8
+fnBindingLoss: 10
+
+#features
+useProtNames:           false
+useStored:              false
+cacheFeatures:          true
+closeDistanceFeatures:  true
+vertexWalk:             true
+edgeWalk:               true
+leftright:              true
+hideProteins:           true
+beforeAfterTrigger:     false
+beforeAfterArg:         true
+aggressivelyNormalize:  true
+corefFeatures:          false
+triggerEntityHeads:     false
+transcriptionFeatures:  true
+conjChildNormalize:     true
+argSiblingFeatures:     false
+argSiblingReporter:     false
+conjPrepOfNormalize:    false
+
+
+#other
+parallelFolds:          true
+copyEqui:		true
+copyEquiIDs:    true
+explain: 		true
+numberRoles:    true

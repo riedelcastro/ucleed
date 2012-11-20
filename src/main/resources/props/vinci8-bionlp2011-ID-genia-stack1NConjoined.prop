@@ -1,0 +1,153 @@
+#
+# Event Type
+# Core arguments
+# Additional arguments
+#
+# Gene expression
+# Theme(Protein or Regulon/Operon)
+#
+# Transcription	 Theme(Protein or Regulon/Operon)
+#
+# Protein catabolism
+# Theme(Protein)
+# Phosphorylation
+# Theme(Protein)	 Site(Entity)
+# Localization	 Theme(Core entity)
+# AtLoc(Entity), ToLoc(Entity)
+# Binding	 Theme(Core entity) +
+# Site(Entity) +
+# Regulation	 Theme(Core entity / Event), Cause(Core entity / Event)
+# Site(Entity), CSite(Entity)
+# Positive regulation
+# Theme(Core entity / Event), Cause(Core entity / Event)	 Site(Entity), CSite(Entity)
+# Negative regulation
+# Theme(Core entity / Event), Cause(Core entity / Event)	 Site(Entity), CSite(Entity)
+# Process	 Participant
+#
+
+
+#General
+taskId:         bionlp2011-ID-genia
+outDir:         out/ID-genia-stack1NConjoined
+events: \
+    $ Process : Protein,Two-component-system,Chemical,Organism,Regulon-operon;\
+    * Regulation,Positive_regulation,Negative_regulation : Protein,Two-component-system,Chemical,Organism,Regulon-operon,Event; \
+    Gene_expression,Transcription: Protein,Regulon-operon; \
+    Protein_catabolism,Phosphorylation: Protein; \
+    Localization,Binding: Protein,Two-component-system,Chemical,Organism,Regulon-operon;
+
+#Datasets
+train:          /usr/dan/users8/riedel/vinci8_data1/projects/bionlp2011-st/data/corpora/ID_genia_train_data
+test:           /usr/dan/users8/riedel/vinci8_data1/projects/bionlp2011-st/data/corpora/BioNLP-ST_2011_Infectious_Diseases_test_data
+dev:            /usr/dan/users8/riedel/vinci8_data1/projects/bionlp2011-st/data/corpora/BioNLP-ST_2011_Infectious_Diseases_development_data_rev1
+
+#data multiplication
+dataMultiplier: 2
+dataToMultiply: props/infect-train-files.txt
+
+#stacking
+stackingDirs:\
+  /usr/dan/users8/riedel/vinci8_data1/projects/bionlp2011-st/data/predictions/ID/stanford/infect-1N
+
+useStacked:        true
+useStackedConjoin: true
+stackBindPairs:    false
+
+#mcclosky parsing configuration
+rerankparser:   /usr/dan/users8/riedel/vinci8_data1/opt/reranking-parser
+biomodel:       /usr/dan/users8/riedel/vinci8_data1/opt/reranking-parser/biomodel
+loadParses:     true
+parseDir:       /usr/dan/users8/riedel/vinci8_data1/projects/bionlp2011-st/data/parses/infect-genia/umass-mccc-parses/
+
+
+#eval script directory with a2-normalize.pl and a2-evaluate.pl
+evalScriptDir:  /usr/dan/users8/riedel/vinci8_data1/projects/bionlp2011-st/3rdparty
+
+#trigger word dict file
+triggerDictFile:    dictionaries/ID-trigger.txt
+
+#general
+a1Ending:       .nn.a1
+runA2Evaluate:  false
+runA2Normalize: false
+numberRoles:    true
+
+#preprocessing
+splitSemicolon: false
+#maxDocs:           40
+maxSentenceLength: 100
+depAugment:     true
+depFix:         false
+
+#event resolution from link graph
+groupBySyntax:      false
+groupByPrediction:  true
+fixNonTransitivity: true
+ignoreRoleForNonTransitivityFix: false
+
+#module configuration
+useSiblings:        false
+onlyEntitySiblings: true
+useParents:         false  
+onlyEntityParents:  true
+themeModule:	    coordinated
+#themeModule:        triggerAwareCoordinated
+predictBindingPairs: true
+coordinateHyphens:  true
+coordinateSlashes:  true
+coordinateConj:     false
+asymmetry:          false
+antiTransitivity:   false
+postprocess:	    true
+
+#inference config
+subgradientSteps:   100
+
+#train config
+epochs:         10
+docs:           5000
+split:          1.0
+folds:          1
+shuffle:	    true
+lossAugment:    false
+forTrain:       train
+forTest:        test
+forValidation:  dev
+average:	    true
+
+#gold solution
+learnTransitive: false
+
+
+#loss function
+fpLoss:		3.8
+fnLoss:		10
+otherLoss:	10
+fpBindingLoss: 3.8
+fnBindingLoss: 10
+
+#features
+useProtNames:           false
+useStored:              false
+cacheFeatures:          true
+closeDistanceFeatures:  true
+vertexWalk:             true
+edgeWalk:               true
+leftright:              true
+hideProteins:           true
+beforeAfterTrigger:     false
+beforeAfterArg:         true
+aggressivelyNormalize:  true
+corefFeatures:          false
+triggerEntityHeads:     false
+transcriptionFeatures:  true
+conjChildNormalize:     true
+argSiblingFeatures:     false
+argSiblingReporter:     false
+conjPrepOfNormalize:    false
+
+#other
+parallelFolds:          true
+copyEqui:		true
+copyEquiIDs:    true
+explain: 		true

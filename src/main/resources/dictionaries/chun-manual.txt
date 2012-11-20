@@ -1,0 +1,162 @@
+accelerate	accelerate	accelerates	accelerated	accelerated	accelerating	acceleration	accelerator		accelerative		
+acetylated	acetylate										
+achieve	achieve	achieves	achieved	achieved	achieving	achievement		achievable 		
+activate	activate	activates	activated	activated	activating	activation	activator	activity	active	activated	
+affect	affect	affects	affected	affected	affecting	affection			affective		
+alter	alter	alters	altered	altered	altering	alteration	alterability	alterant	alterative	alterable	alterant
+amplified	amplify	amplifies	amplified	amplified	amplifing	amplifier	amplification	amplitude	ample		
+antagonize	antagonize	antagonizes	antagonized	antagonized	antagonizing	antagonist	antagonism		antagonistic	antagonistical	
+arrest	arrest	arrests	arrested	arrested	arresting	arrestor 	arrestment		arrested		
+attenuate	attenuate	attenuates	attenuated	attenuated	attenuating	attenuation			attenuate		
+autoinduced	autoinduce	autoinduces	autoinduced	autoinduced	autoinducing						
+autoregulated	autoregulate	autoregulates	autoregulated	autoregulated	autoregulating					
+auto-regulates	autoregulate										
+autostimulate	autostimulate	autostimulates	autostimulated	autostimulated	autostimulating					
+bind	bind	binds	bound	bound	binding	bind	binder	binding	binding	bound	
+biotinylated	biotinylate										
+block	block	blocks	blocked	blocked	blocking	block	blockade	blockage	blockish	blocky	
+bound	bound	bounds	bounded	bounded	bounding	bound	boundary		boundless		
+catalyze	catalyze	catalyzes	catalyzed	catalyzed	catalyzing	catalyst					
+cell-associated	cell-associate	cell-associates	cell-associated	cell-associated	cell-associating					
+chaperoning	chaperon	chaperons	chaperoned	chaperoned	chaperoning	chaperon	chaperonage			
+chromatinized	chromatinize	chromatinizes	chromatinized								
+cis-acting	cis-act	cis-acts	cis-acted	cis-acted	cis-acting						
+cleave	cleave	cleaves	clove	cloven	cleaving	cleft	cleaver				
+co-expressing	co-express	co-expresses	co-expressed	co-expressed	co-expressing					
+co-immunoprecipitated	co-immunoprecipitate	co-immunoprecipitates	co- immunoprecipitated	co- immunoprecipitated	co- immunoprecipitating					
+coactivated	coactivate	coactivates	coactivated	coactivated	coactivating						
+coexpress	coexpress	coexpresses	coexpressed	coexpressed	coexpressing						
+confer	confer	confers	conferred	conferred	conferring	conferment	conference				
+connected	connect	connects	connected	connected	connecting	connection	connector		connective		
+control	control	controls	controlled	controlled	controlling	control	controlment	controller	controlable		
+convert	convert	converts	converted	converted	converting	conversion	convertor		converse	convertiable	
+cooperate	cooperate	cooperates	cooperated	cooperated	cooperating	cooperation			cooperative		
+coordinate	coordinate	coordinates	coordinated	coordinated	coordinating	coordination		coordinative	coordinated	
+copurified	copurify	copurifies	copurified	copurified	copurifying						
+correlate	correlate	correlates	correlated	correlated	correlating	correlation	correlativity		correlative		
+costimulate	costimulate	costimulates	costimulated	costimulated	costimulating						
+counteracts	counteract	counteracts	counteracted	counteracted	counteracting	counteraction	counteragent	counteractive	
+couple	couple	couples	coupled	coupled	coupling	couple	coupling				
+crosslink	crosslink	crosslinks	crosslinked	crosslinked	crosslinking	crosslink					
+deacetylated	deacetylate	deacetylates	deacetylated	deacetylated	deacetylating						
+deactivating	deactivate	deactivates	deactivated	deactivated	deactivating	deactivation	deactivator				
+decrease	decrease	decreases	decreased	decreased	decreasing	decrease			decreasing		
+deliver	deliver	delivers	delivered	delivered	delivering	deliverance	delivery		deliverable		
+demethylated	demethylate	demethylates	demethylated	demethylated	demethylating					
+dephosphorylate	dephosphorylate	dephosphorylates	dephosphorylated	dephosphorylated	dephosphorylating					
+deregulate	deregulate	deregulates	deregulated	deregulated	deregulating	deregulation				
+differentiate	differentiate	differentiates	differentiated	differentiated	differentiating	differentiation				
+dimerizes	dimerize										
+diminish	diminish	diminishes	diminished	diminished	diminishing	diminution			diminutive	diminished	diminishable
+discriminate	discriminate	discriminates	discriminated	discriminated	discriminating	discrimination		discriminative	discriminatory
+disrupt	disrupt	disrupts	disrupted	disrupted	disrupting	disruption			disruptive		
+down-regulated	down-regulate	down-regulates	down-regulated	down-regulated	down-regulating					
+downregulate	down-regulate										
+down-modulate	down-modulate	down-modulates	down-modulated	down-modulated	down-modulating					
+downstream	downstream								downstream		
+encode	encode	encodes	encoded	encoded	encoding	encoder					
+enhance	enhance	enhances	enhanced	enhanced	enhancing	enhancement				
+exceed	exceed	exceeds	exceeded	exceeded	exceeding	excess			excessive		
+express	express	expresses	expressed	expressed	expressing	expression			expressive		
+extend	extend	extends	extended	extended	extend	extension	extent		extensive	extensile	
+function	function	functions	functioned	functioned	functioning	function	functionary		functional	functionary	
+glycosylated	glycosylate	glycosylates	glycosylated	glycosylated	glycosylating						
+grouped	group	groups	grouped	grouped	grouping	group					
+heterodimerize	heterodimerize	heterodimerizes	heterodimerized	heterodimerized	heterodimerizing					
+homodimerizing	homodimerize	homodimerizes	homodimerized	homodimerized	homodimerizing					
+hybridized	hybridize	hybridizes	hybridized	hybridized	hybridizing	hybridization	hybridity 	hybridism 			
+hydrolyse	hydrolyse										
+hyperphosphorylated	hyperphosphorylate	hyperphosphorylates									
+hypomethylated	hypomethylate	hypomethylates									
+hypophosphorylated	hypophosphorylate	hypophosphorylates									
+hyposialylated	hyposialylate	hyposialylates									
+inactivate	inactivate	inactivates	inactivated	inactivated	inactivating	inactivation			inactivity		
+increase	increase	increases	increased	increased	increasing	increase			increasing		
+induce	induce	induces	induced	induced	inducing	inducement			inducible		
+induced/inhibited	induce/inhibit										
+influence	influence	influences	influenced	influenced	influencing	influence			influent	influential	
+inhibit	inhibit	inhibits	inhibited	inhibited	inhibiting	inhibition			inhibited	inhibitory	
+initiate	initiate	initiates	initiated	initiated	initiating	initiation			initial	initiative	initiatory
+integrate	integrate	integrates	integrated	integrated	integrating				integrated		
+interact	interact	interacts	interacted	interacted	interacting	interaction			interactive		
+interfere	interfere	interferes	interfered	interfered	interfering	interference			interferential 	
+isoforms	isoform										
+isolate	isolate	isolates	isolated	isolated	isolating	isolation			isolated		
+knocked	knock	knocks	knocked	knocked	knocking	knock					
+linked	link	links	linked	linked	linking	link	linkage				
+localized	localize	localizes	localized	localized	localizing	localization			localizable		
+mediate	mediate	mediates	mediated	mediated	mediating	mediation					
+metabolized	metabolize	metabolizes	metabolized	metabolized	metabolizing						
+methylated	methylate	methylates	methylated	methylated	methylating	methylation					
+modified	modify	modifies	modified	modified	modifying	modification		modificatory		
+modulate	modulate	modulates	modulated	modulated	modulating	modulation					
+multimerizing	multimerize	multimerizes									
+mutagenized	mutagenize	mutagenizes									
+mutated	mutate	mutates	mutated	mutated	mutating	mutation			mutational	mutative	
+overexpress	overexpress	overexpresses	overexpressed	overexpressed	overexpressing	overexpression		overexpressive	
+over-express	overexpress	over-expresses	상동								
+overexpresses	overexpress	overexpresses	상동								
+overlaps	overlap	overlaps	overlapped	overlapped	overlapping	overlap					
+oxidized	oxidize	oxidizes	oxidized	oxidized	oxidizing	oxide	oxidization	oxidation	oxidant		
+participate	participate	participates	participated	participated	participating	participator					
+phosphorylate	phosphorylate	phosphorylates	phosphorylated	phosphorylated	phosphorylating					
+polychlorinated	polychlorinate	polychlorinates	polychlorinated	polychlorinated	polychlorinating					
+polyubiquitinated	polyubiquitinate	polyubiquitinates	polyubiquitinated	polyubiquitinated	polyubiquitinating					
+predominate	predominate	predominates	predominated	predominated	predominating	predomination				
+prevent	prevent	prevents	prevented	prevented	preventing	prevention			preventable		
+process	process	processes	processed	processed	processing	processor					
+proliferate	proliferate	proliferates	proliferated	proliferated	proliferating	proliferation				
+promote	promote	promotes	promoted	promoted	promoting	promotion			promotable		
+protect	protect	protects	protected	protected	protecting	protection			protective		
+protein/activating	protein/activate										
+proteolyzed	proteolyze	proteolyzes	proteolyzed	proteolyzed	proteolyzing	proteolysis			proteolytic		
+radiolabeled	radiolabel	radiolabels	radiolabeled	radiolabeled	radiolabeling						
+recovered	recover	recovers	recovered	recovered	recovering	recovery			recoverable		
+reduce	reduce	reduces	reduced	reduced	reducing	reduction			reducible		
+regulate	regulate	regulates	regulated	regulated	regulating	regulation			regulative		
+related	relate	relates	related	related	relating	relation			relational	relative	
+release	release	releases	released	released	releasing	release			releasable		
+remove	remove	removes	removed	removed	removing	removal			removed		
+rephosphorylated	rephosphorylate	rephosphorylates	rephosphorylated	rephosphorylated	rephosphorylating	rephosphorylation				
+replace	replace	replaces	replaced	replaced	replacing	replacement		replaceable		
+repress	repress	represses	repressd	repressd	repressing	repressor	represser		repressible		
+rescue	rescue	rescues	rescued	rescued	rescuing	rescue			rescuable		
+restimulated	restimulate	restimulates	restimulated	restimulated	restimulating	restimulation	restimulator	restimulative	
+secrete	secrete	secretes	secreted	secreted	secreting	secretor	secrete				
+share	share	shares	shared	shared	sharing	share					
+shortened	shorten	shortens	shortened	shortened	shortening	shortener			short		
+sialylated	sialylate	sialylates	sialylated	sialylated	sialylating	sialylation					
+signaled	signal	signals	signaled	signaled	signaling	signal			signal		
+signaling	signal										
+silenced	silence	silences	silenced	silenced	silencing	silence					
+silencing	silence										
+splice	splice	splices	spliced	spliced	splicing	splice			splice		
+stabilize	stabilize	stabilizes	stabilized	stabilized	stabilizing	stabilizer					
+stimulate	stimulate	stimulates	stimulated	stimulated	stimulating	stimulation			stimulative		
+strengthens	strengthen	strengthens	strengthened	strengthened	strengthen	strength					
+superactivates	superactivate	superactivates	superactivated	superactivated	superactivating	superactivation				
+superinduced	superinduce	superinduces	superinduced	superinduced	superinducing	superinduction				
+super-induced	superinduce										
+suppress	suppress	suppresses	suppressed	suppressed	suppressing	suppressor	suppression	suppressive		
+switch	switch	switches	switched	switched	switching	switch			switchable		
+synergize	synergize	synergizes				synergy			synergic		
+target	target	targets	targeted	targeted	targeting	target			targetable		
+terminate	terminate	terminates	terminated	terminated	terminating	termination	terminator		terminative		
+transactivate	transactivate	transactivates	transactivated	transactivated	transactivating	transactivation				
+trans-activated	transactivate										
+transformed	transform	transforms	transformed	transformed	transforming	transform			transformable	
+translated	translate	translates	translated	translated	translating	translation			translatable		
+translocated	translocate	translocates	translocated	translocated	translocating	translocation				
+trigger	trigger	triggers	triggered	triggered	triggering	trigger					
+truncated	truncate	truncates	truncated	truncated	truncating	truncation			truncated		
+ubiquitinated	ubiquitinate										
+uncouple	uncouple	uncouples	uncoupled	uncoupled	uncoupling						
+underphosphorylated	underphosphorylate										
+up-regulate	up-regulate	up-regulates	up-regulated	up-regulated	up-regulating					
+up-regulates	up-regulate										
+accumulate	accumulate	accumulates	accumulated	accumulated	accumulating	accumulation				
+degrade	degrade	degrades	degraded	degraded	degrading	degradation					
+require	require	requires	required	required	requiring	requirement	requisition	request			
+abolish	abolish	abolishes	abolished	abolished	abolishing	abolition					
+contain	contain	contains	contained	contained	containing	content	containment			
+facilitate	facilitate	facilitates	facilitated	facilitated	facilitating	facility	facilitation				

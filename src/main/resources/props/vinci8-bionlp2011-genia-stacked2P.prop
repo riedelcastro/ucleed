@@ -1,0 +1,113 @@
+#General
+taskId:         bionlp2011-genia
+outDir:         out/stacked2P
+events: \
+    * Regulation,Positive_regulation,Negative_regulation : Protein,Event; \
+    Gene_expression,Transcription,Protein_catabolism,Phosphorylation,Localization,Binding: Protein;
+
+#Datasets
+train:          /usr/dan/users8/riedel/vinci8_data1/projects/bionlp2011-st/data/corpora/BioNLP-ST_2011_genia_train_data_rev1
+test:           /usr/dan/users8/riedel/vinci8_data1/projects/bionlp2011-st/data/corpora/BioNLP-ST_2011_genia_test_data
+dev:            /usr/dan/users8/riedel/vinci8_data1/projects/bionlp2011-st/data/corpora/BioNLP-ST_2011_genia_devel_data_rev1
+
+#mcclosky parsing configuration
+rerankparser:   /usr/dan/users8/riedel/vinci8_data1/opt/reranking-parser
+biomodel:       /usr/dan/users8/riedel/vinci8_data1/opt/reranking-parser/biomodel
+loadParses:     true
+parseDir:       /usr/dan/users8/riedel/vinci8_data1/projects/bionlp2011-st/data/parses/genia/umass-mccc-parses/
+
+
+#eval script directory with a2-normalize.pl and a2-evaluate.pl
+evalScriptDir:  /usr/dan/users8/riedel/vinci8_data1/projects/bionlp2011-st/3rdparty
+
+#trigger word dict file
+triggerDictFile:    dictionaries/genia-trigger.txt
+
+#preprocessing
+depAugment:     true
+depFix:         false
+
+#stacking
+stackingDirs:\
+  /usr/dan/users8/riedel/vinci8_data1/projects/bionlp2011-st/data/predictions/genia/stanford/genia-2P
+
+useStacked:         true
+stackBindPairs:     false
+useStackedTriggers: false
+useStackedArgs:     false
+
+
+#event resolution from link graph
+groupBySyntax:      false
+groupByPrediction:  true
+fixNonTransitivity: true
+ignoreRoleForNonTransitivityFix: false
+
+#module configuration
+useSiblings:        false
+onlyEntitySiblings: true
+useParents:         false  
+onlyEntityParents:  true
+themeModule:	    coordinated
+#themeModule:        triggerAwareCoordinated
+predictBindingPairs: true
+coordinateHyphens:  true
+coordinateSlashes:  true
+coordinateConj:     false
+asymmetry:          false
+antiTransitivity:   false
+postprocess:	    true
+
+#inference config
+subgradientSteps:   100
+
+#train config
+epochs:         10
+docs:           5000
+split:          1.0
+folds:          5
+shuffle:	    false
+lossAugment:    false
+forTrain:       train
+forTest:        dev
+forValidation:  dev
+average:	    true
+
+#gold solution
+learnTransitive: false
+
+
+#loss function
+fpLoss:		3.8
+fnLoss:		10
+otherLoss:	10
+fpBindingLoss: 3.8
+fnBindingLoss: 10
+
+#features
+useProtNames:           false
+useStored:              false
+cacheFeatures:          true
+closeDistanceFeatures:  true
+vertexWalk:             true
+edgeWalk:               true
+leftright:              true
+hideProteins:           true
+beforeAfterTrigger:     false
+beforeAfterArg:         true
+aggressivelyNormalize:  true
+corefFeatures:          false
+triggerEntityHeads:     false
+transcriptionFeatures:  true
+conjChildNormalize:     true
+argSiblingFeatures:     false
+argSiblingReporter:     false
+conjPrepOfNormalize:    false
+
+
+#other
+parallelFolds:          true
+copyEqui:		true
+copyEquiIDs:    true
+explain: 		true
+numberRoles:    true

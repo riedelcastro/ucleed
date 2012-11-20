@@ -1,0 +1,426 @@
+oligosaccharide chain
+arginin
+Ubiquityl
+Pro-9
+Monoubiquitin
+Promot
+under-glycosyl
+C-terminal domain
+enhanc
+auto-hydroxyl
+BCR2 promot
+Asparagin
+566
+K284
+nonhydroxyl
+K526
+asparagine 803
+tri-methyl
+three sit
+upregul
+Xyl-Glc
+171
+Pro44
+center part
+N-acetyl
+oligosaccharid
+tail
+unmethyl
+DNA demethyl
+lysines 50
+sialyl alpha2-6 GalNAc
+Glycosyl
+Pro-564
+non-N-glycosyl
+8
+regulatory sequ
+High-mannos
+lysine residue 219
+unglycosyl
+Lys27
+322
+Lys-5
+hyperglycosyl
+arginine 8
+proline residu
+DMR
+lysine residue 225
+158N
+Hypomethyl
+lysyl residu
+N-glycosylation sit
+underhydroxyl
+5' end
+asparagine residue 803
+C-termin
+Asn-107
+Thr172
+564
+monoubiquitination-resist
+K275
+933
+absenc
+epidermal growth factor (EGF) domain
+lysine 9
+S311
+non-glycosyl
+hypoacetyl
+exon 5
+Hypermethyl
+lysine 4
+K550
+unacetyl
+N-link
+K477
+CpG-dinucleotid
+79
+CGI overlapping exon 8
+Cys(11)
+oxygen-dependent degradation domain
+EGF-like modul
+monoubiquitin
+dimethyl
+Lys 4
+edg
+induc
+alpha-N-acetylgalactosamin
+Lys9
+K36
+monoglycan
+lysine 250
+K120
+exon 3
+Asn-803
+Lys20
+K481
+N-terminal domain
+exon 2 CpG island
+phosphoryl
+deubiquitin
+GlcNAc
+K4
+underglycosyl
+CpG
+Tri-methyl
+four CpG
+lysin
+Phosphoryl
+N-acetylglucosamin
+K451
+5' region
+proline-382
+Trimethyl
+K20
+mono-ubiquityl
+promoter-region
+R8
+carbohydr
+aspart
+N-methyl
+Polyubiquitin
+util
+K(57)
+Ser-8
+Thr
+5'-flanking regulatory region
+catalyz
+transcribed region
+K8
+lysine 120
+K325
+Lys-12
+Asp residu
+Lys-4
+polyubiquitinyl
+hypoglycosyl
+heavy chain
+Asparagine-803
+regul
+Ser-434
+lysine 16
+Asn1007
+Methylesterif
+carbohydrate oligosaccharid
+autoacetyl
+Monoubiquitinyl
+carbohydrate moieti
+poly-ubiquitin
+lysine residues 170
+Lys 79
+hydroxyl
+Asn1244
+Asn residues 554
+hydroxylysine residu
+lysines 4
+5-CCGG-3
+N-linked glycosylation sit
+carri
+lysine 12
+Asn2108
+Pro71
+monoubiquitinyl
+GpNpC
+ubiquityl
+K623
+Asparagine residues 145
+Lys36
+asparagine residu
+Asn554
+de-phosphoryl
+Modif
+Deubiquitin
+hydroxylysin
+3Hyp sit
+Asn633
+hypophosphoryl
+tetraacetyl
+GalNAc-Gal2-NANA
+dephosphoryl
+N605
+amino-terminal region
+Automethyl
+facilit
+Asn176
+dermatan sulf
+differentially methylated domain
+CpG site
+K524
+5'GCGC-3
+required for
+promot
+acetyl
+P564
+arginine 3
+Asn566
+GalNAc
+O-glycosid
+cytosin
+3' end
+transfer
+K14
+-395
+lysine residu
+N-terminal region
+radiomethyl
+occupi
+-847
+anchor
+12
+K12
+K123
+Gal beta1-3 GalNAc
+CpGs
+promoter region
+206
+position -38
+TF
+N550
+plays an important rol
+convers
+K239 residu
+erythro beta-hydroxyaspartic acid
+glycosyl
+Asn 45
+remov
+prolin
+loss of acetyl
+demethyl
+methylat
+tri-
+lysine-79
+Ubiquitin
+prolyl residu
+R2
+proline 986
+lysine 517
+CpG region
+Acetyl
+N-acetylhexosamine-hexos
+N-glycan
+N-
+C terminus
+deacetyl
+DMD
+lysines 5
+ubiquin
+attach
+Pro76
+alpha-GalNAc
+K204
+use
+imprinted region
+O-glycosyl
+Hyperacetyl
+N-linked glycosyl
+N570
+poly-ubiquityl
+receiv
+Asn-309
+Gal(beta 1-3)GalNAc
+K16
+four asparagin
+mono-
+K561
+aspartic acid residu
+Ser32
+immunodominant region
+autoubiquitin
+exon 2
+ubiquitin
+Ser-430
+Pro-402
+lysine 8
+N-terminus
+Asn
+Deglycosyl
+smaller (probably high mannose) structur
+methyl esterif
+K607
+complex oligosaccharid
+DNA hypermethyl
+lysine 1268
+Tn
+polyubiquitin
+deubiquityl
+CpNpG
+eight sit
+Asn803
+lysine 27
+glutamine residue number 150
+Xyl-Glc-
+hypermethyl
+5' flanking region
+Lysine 9
+exon 11
+nonmethyl
+automethyl
+Tri-
+multiubiquitin
+depend
+K559
+trimethyl modif
+overubiquitin
+positions -147
+Asn-37
+modif
+substitut
+K219
+nonglycosyl
+extracellular domain
+5'-GCGC-3
+705
+hypomethyl
+asparagine residue 322
+di-
+second-exon CpG island
+Asn residu
+GlcNAc-
+proline residue 402
+Pro 564
+first glycosylation sit
+Asn-link
+Thr-426
+center
+Glc-
+monoacetyl
+N-epsilon-methyl
+Methyl
+nonacetyl
+hyperacetyl
+asparagine residue 145
+Ser-268
+Lys517
+K399
+Remethyl
+core promot
+KIX domain
+35S promot
+DNA methyl
+51
+Hydroxyl
+5'-CG-3
+sugar chain
+truncated oligosaccharid
+N-linked sit
+remethyl
+lysyl
+carboxy-terminal region
+light chain
+Ser-410
+Ser322
+binding sit
+K538
+potential sit
+N-glycosyl
+O-
+trimethyl
+Ser 52
+Hypoglycosyl
+Xyl-GlcNAc
+glycosylation sit
+asparagin
+active sit
+N459
+sialylated, diantennary oligosaccharid
+serine residu
+overhydroxyl
+Pro95
+K5
+208
+NH2 tail
+fucosyl
+methyl
+self-ubiquitin
+CpG island
+methyl esterifi
+glycosylphosphatidylinositol
+mediat
+K9
+Trp296
+GPI
+K79
+Asn(30)
+deglycosyl
+25 CpG site
+16
+prolyl
+position 934
+5' CpG island
+lysine 123
+K27
+K107
+monomethyl
+Remov
+Asn73
+Xyl-GlcNAc-
+occup
+core
+format
+O glycosyl
+Lys-9
+mono-ubiquitin
+Lys4
+loss
+PDTRP core peptide epitop
+upstream promot
+Lysine-79
+N627
+3-hydroxyl
+K347
+O-linked glycosyl
+GalNAc-Gal2
+glucosyl
+Asn86
+Asn-333
+lysine 20
+stimul
+CGI
+Lysine 170
+residues 930
+beta-hydroxyl
+STn
+ubiquitinyl
+arginine residu
+de-N-glycosyl
+O-link
+Asn(13)

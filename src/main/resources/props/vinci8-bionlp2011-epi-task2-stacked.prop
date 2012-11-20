@@ -1,0 +1,133 @@
+#
+# Event type
+# Core arguments
+# Additional arguments
+# Hydroxylation
+# Theme(Protein)	 Site(Entity)
+# Phosphorylation	 Theme(Protein)	 Site(Entity)
+# Ubiquitination	 Theme(Protein)
+# Site(Entity)
+# DNA methylation
+# Theme(Protein)
+# Site(Entity)
+# Glycosylation	 Theme(Protein)
+# Site(Entity), Sidechain(Entity)
+# Acetylation
+# Theme(Protein)	 Site(Entity), Contextgene(Protein)
+# Methylation	 Theme(Protein)	 Site(Entity), Contextgene(Protein)
+# Catalysis	 Theme(Event), Cause(Protein)	 -
+
+#General
+taskId:         bionlp2011-epi-task2
+outDir:         out/stackedN
+events: \
+    * Catalysis : Protein, Event; \
+    Hydroxylation,Phosphorylation,Ubiquitination,DNA_methylation,Dehydroxylation,Dephosphorylation,Deubiquitination,DNA_demethylation:Protein | Site;\
+    Glycosylation,Deglycosylation:Protein | Site, Sidechain;\
+    Acetylation,Methylation, Deacetylation,Demethylation : Protein | Site, Contextgene;
+
+#Datasets
+train:          /usr/dan/users8/riedel/vinci8_data1/projects/bionlp2011-st/data/corpora/BioNLP-ST_2011_Epi_and_PTM_training_data_rev1
+test:           /usr/dan/users8/riedel/vinci8_data1/projects/bionlp2011-st/data/corpora/BioNLP-ST_2011_Epi_and_PTM_test_data
+dev:            /usr/dan/users8/riedel/vinci8_data1/projects/bionlp2011-st/data/corpora/BioNLP-ST_2011_Epi_and_PTM_development_data_rev1
+
+#stacking
+#stackingDirs:\
+#  /usr/dan/users8/riedel/vinci8_data1/projects/bionlp2011-st/data/predictions/genia/stanford/genia-1N,\
+#  /usr/dan/users8/riedel/vinci8_data1/projects/bionlp2011-st/data/predictions/genia/stanford/genia-1P,\
+#  /usr/dan/users8/riedel/vinci8_data1/projects/bionlp2011-st/data/predictions/genia/stanford/genia-2N,\
+#  /usr/dan/users8/riedel/vinci8_data1/projects/bionlp2011-st/data/predictions/genia/stanford/genia-2P
+#
+#useStacked:     true
+#stackBindPairs: false
+
+#mcclosky parsing configuration
+rerankparser:   /usr/dan/users8/riedel/vinci8_data1/opt/reranking-parser
+biomodel:       /usr/dan/users8/riedel/vinci8_data1/opt/reranking-parser/biomodel
+loadParses:     true
+parseDir:       /usr/dan/users8/riedel/vinci8_data1/projects/bionlp2011-st/data/parses/epi/umass-mccc-parses/
+
+#eval script directory with a2-normalize.pl and a2-evaluate.pl
+evalScriptDir:  /usr/dan/users8/riedel/vinci8_data1/projects/bionlp2011-st/3rdparty
+
+#trigger word dict file
+triggerDictFile:    dictionaries/epi-trigger.txt
+
+#preprocessing
+depAugment:     true
+depFix:         false
+maxSentenceLength: 100
+
+#event resolution from link graph
+groupBySyntax:      true
+groupByPrediction:  false
+fixNonTransitivity: true
+ignoreRoleForNonTransitivityFix: false
+
+#module configuration
+useSiblings:        false
+onlyEntitySiblings: true
+useParents:         false  
+onlyEntityParents:  true
+themeModule:	    coordinated
+#themeModule:        triggerAwareCoordinated
+predictBindingPairs: false
+coordinateHyphens:  true
+coordinateSlashes:  true
+coordinateConj:     false
+asymmetry:          false
+antiTransitivity:   false
+postprocess:	    true
+
+#inference config
+subgradientSteps:   100
+
+#train config
+epochs:         5
+docs:           1000
+split:          1.0
+folds:          1
+shuffle:	    false
+lossAugment:    false
+forTrain:       train
+forTest:        test
+forValidation:  dev
+average:	    true
+
+#gold solution
+learnTransitive: false
+
+
+#loss function
+fpLoss:		3.8
+fnLoss:		10
+otherLoss:	10
+fpBindingLoss: 3.8
+fnBindingLoss: 10
+
+#features
+useProtNames:           false
+useStored:              false
+cacheFeatures:          true
+closeDistanceFeatures:  true
+vertexWalk:             true
+edgeWalk:               true
+leftright:              true
+hideProteins:           true
+beforeAfterTrigger:     false
+beforeAfterArg:         true
+aggressivelyNormalize:  true
+corefFeatures:          false
+triggerEntityHeads:     false
+transcriptionFeatures:  true
+conjChildNormalize:     true
+argSiblingFeatures:     false
+argSiblingReporter:     false
+conjPrepOfNormalize:    false
+
+
+#other
+parallelFolds:          true
+copyEqui:		true
+copyEquiIDs:    true
+explain: 		true

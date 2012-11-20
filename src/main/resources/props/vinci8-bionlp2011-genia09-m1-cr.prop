@@ -1,0 +1,109 @@
+#General
+taskId:         bionlp2011-genia09
+outDir:         out/m1-cr
+events: \
+    * Regulation,Positive_regulation,Negative_regulation : Protein,Event; \
+    Gene_expression,Transcription,Protein_catabolism,Phosphorylation,Localization,Binding: Protein;
+
+#Datasets
+train:          /usr/dan/users8/riedel/vinci8_data1/projects/bionlp2011/data/corpora/training
+test:           /usr/dan/users8/riedel/vinci8_data1/projects/bionlp2011/data/corpora/test
+dev:            /usr/dan/users8/riedel/vinci8_data1/projects/bionlp2011/data/corpora/development
+
+#mcclosky parsing configuration
+rerankparser:   /usr/dan/users8/riedel/vinci8_data1/opt/reranking-parser
+biomodel:       /usr/dan/users8/riedel/vinci8_data1/opt/reranking-parser/biomodel
+loadParses:     false
+parseDir:       /usr/dan/users8/riedel/vinci8_data1/projects/bionlp2011-st/data/parses/genia/umass-mccc-parses/
+
+
+#eval script directory with a2-normalize.pl and a2-evaluate.pl
+evalScriptDir:  /usr/dan/users8/riedel/vinci8_data1/projects/bionlp2011-st/3rdparty
+
+#trigger word dict file
+triggerDictFile:    dictionaries/genia-trigger-09.txt
+
+#preprocessing
+depAugment:     true
+depFix:         false
+
+#stacking
+stackingDir:    /usr/dan/users8/riedel/vinci8_data1/projects/bionlp2011-st/data/predictions/genia/stanford/2011.03.03-all
+useStacked:     false
+
+#event resolution from link graph
+groupBySyntax:      true
+groupByPrediction:  false
+fixNonTransitivity: true
+ignoreRoleForNonTransitivityFix: false
+
+#module configuration
+useSiblings:        false
+onlyEntitySiblings: true
+useParents:         false  
+onlyEntityParents:  true
+targetModule:       false
+themeModule:	    coordinated
+#themeModule:        triggerAwareCoordinated
+predictBindingPairs: false
+coordinateHyphens:  true
+coordinateSlashes:  true
+coordinateConj:     false
+asymmetry:          false
+antiTransitivity:   false
+postprocess:	    true
+
+#inference config
+subgradientSteps:   100
+
+#train config
+epochs:         10
+docs:           5000
+split:          1.0
+folds:          5
+shuffle:	    true
+lossAugment:    false
+forTrain:       train
+forTest:        test
+forValidation:  dev
+average:	    true
+
+#gold solution
+learnTransitive: false
+
+
+#loss function
+fpLoss:         0.9
+fnLoss:         2.5
+otherLoss:      2.5
+fpBindingLoss: 0.9
+fnBindingLoss: 2.5
+
+#features
+useProtNames:           false
+useStored:              false
+cacheFeatures:          true
+closeDistanceFeatures:  true
+vertexWalk:             true
+edgeWalk:               true
+leftright:              true
+hideProteins:           true
+beforeAfterTrigger:     false
+beforeAfterArg:         true
+aggressivelyNormalize:  true
+corefFeatures:          false
+triggerEntityHeads:     false
+transcriptionFeatures:  true
+conjChildNormalize:     true
+argSiblingFeatures:     false
+argSiblingReporter:     false
+conjPrepOfNormalize:    false
+dictFeatures:           true
+
+
+#other
+parallelFolds:          true
+copyEqui:		true
+copyEquiIDs:    true
+explain: 		true
+numberRoles:    true
