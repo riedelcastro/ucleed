@@ -1,4 +1,4 @@
-UMass BioNLP Event Extractor
+UCL/UMass BioNLP Event Extractor
 ============================
 
 # Installation
@@ -7,11 +7,13 @@ Get maven, untar/unzip and then run
 
     $ mvn compile
 
-Get mongo, and run the mongo server
+ucleed stores preprocessed data in a mongo database. Hence you need to get mongo, and run the mongo server
 
     $ mongod
 
 You should also have an installation of the BioNLP reranking parser by David McClosky on your machine.
+
+You also need to configure a few directory locations. Copy the example in `src/main/resources/props/example.prop` and modify as needed.
 
 # Preprocessing
 
