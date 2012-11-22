@@ -21,8 +21,8 @@ Before we train, we need to go through two preprocessing steps that prepare the 
 
     $ mvn exec:exec -Dexec.executable="java" -Dexec.args="-Xmx1g -Dprop=props/example.prop  -cp %classpath cc.refectorie.proj.bionlp2011.ClearAnnotated"
 
-to clear the database (this is actually only necessary if you want to rerun experiments but it shouldn't hurt). The do 
-)
+to clear the database (this is actually only necessary if you want to rerun experiments but it shouldn't hurt). Then do
+
     $ mvn exec:exec -Dexec.executable="java" -Dexec.args="-Xmx1g -Dprop=props/example.prop  -cp %classpath cc.refectorie.proj.bionlp2011.LowLevelAnnotation dev train test"
 
 This will add tokenize, sentence-split etc. the data specified in the prop file.
