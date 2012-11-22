@@ -11,19 +11,19 @@
 
     <repositories>
         <repository>
-            <id>scala-tools.org</id>
-            <name>Scala-Tools Maven2 Repository</name>
-            <url>http://scala-tools.org/repo-releases</url>
+            <id>sonatype.org</id>
+            <name>Sonatype</name>
+            <url>https://oss.sonatype.org/content/groups/scala-tools/</url>
         </repository>
         <repository>
             <id>iesl.cs.umass.edu</id>
             <name>IESL repository</name>
-            <url>http://iesl.cs.umass.edu:8081/nexus/content/repositories/thirdparty/</url>
+            <url>https://dev-iesl.cs.umass.edu/nexus/content/repositories/thirdparty/</url>
         </repository>
         <repository>
             <id>snapshot.iesl.cs.umass.edu</id>
             <name>IESL snapshot repository</name>
-            <url>http://iesl.cs.umass.edu:8081/nexus/content/repositories/snapshots</url>
+            <url>https://dev-iesl.cs.umass.edu/nexus/content/repositories/snapshots</url>
             <snapshots>
                 <enabled>true</enabled>
                 <updatePolicy>daily</updatePolicy>
@@ -32,7 +32,7 @@
         <repository>
             <id>release.iesl.cs.umass.edu</id>
             <name>IESL release repository</name>
-            <url>http://iesl.cs.umass.edu:8081/nexus/content/repositories/releases/</url>
+            <url>https://dev-iesl.cs.umass.edu/nexus/content/repositories/releases/</url>
         </repository>
         <repository>
             <id>ebi-repo</id>
