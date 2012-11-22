@@ -1,0 +1,203 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>cc.refectorie.proj.bionlp2011st</groupId>
+    <artifactId>bionlp2011st</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <inceptionYear>2008</inceptionYear>
+    <properties>
+        <scala.version>2.8.0</scala.version>
+    </properties>
+
+    <repositories>
+        <repository>
+            <id>scala-tools.org</id>
+            <name>Scala-Tools Maven2 Repository</name>
+            <url>http://scala-tools.org/repo-releases</url>
+        </repository>
+        <repository>
+            <id>iesl.cs.umass.edu</id>
+            <name>IESL repository</name>
+            <url>http://iesl.cs.umass.edu:8081/nexus/content/repositories/thirdparty/</url>
+        </repository>
+        <repository>
+            <id>snapshot.iesl.cs.umass.edu</id>
+            <name>IESL snapshot repository</name>
+            <url>http://iesl.cs.umass.edu:8081/nexus/content/repositories/snapshots</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>release.iesl.cs.umass.edu</id>
+            <name>IESL release repository</name>
+            <url>http://iesl.cs.umass.edu:8081/nexus/content/repositories/releases/</url>
+        </repository>
+        <repository>
+            <id>ebi-repo</id>
+            <name>ebi-repo</name>
+            <url>http://www.ebi.ac.uk/~maven/m2repo</url>
+        </repository>
+        <repository>
+            <id>novusRels</id>
+            <name>repo.novus rels</name>
+            <url>http://repo.novus.com/releases/</url>
+        </repository>
+        <repository>
+            <id>novusSnaps</id>
+            <name>repo.novus snaps</name>
+            <url>http://repo.novus.com/snapshots/</url>
+        </repository>
+
+
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>scala-tools.org</id>
+            <name>Scala-Tools Maven2 Repository</name>
+            <url>http://scala-tools.org/repo-releases</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>${scala.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-core-asl</artifactId>
+            <version>1.8.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+            <version>1.8.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.4</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>cc.refectorie.proj.factorieie</groupId>
+            <artifactId>factorieie</artifactId>
+            <version>1.2-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>annas</groupId>
+            <artifactId>annas</artifactId>
+            <version>21-02-10</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>r07</version>
+        </dependency>
+        <dependency>
+            <groupId>edu.stanford</groupId>
+            <artifactId>stanford-corenlp-faust</artifactId>
+            <version>2011-01-14</version>
+            <scope>compile</scope>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>edu.stanford</groupId>
+            <artifactId>stanford-corenlp-faust-models</artifactId>
+            <version>2011-01-07</version>
+            <scope>compile</scope>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>uk.ac.ebi.uniprot.kraken</groupId>
+            <artifactId>uniprotjapi</artifactId>
+            <version>2011.08</version>
+        </dependency>
+        <dependency>
+            <groupId>nu.validator.htmlparser</groupId>
+            <artifactId>htmlparser</artifactId>
+            <version>1.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.novus</groupId>
+            <artifactId>salat-core_2.8.1</artifactId>
+            <version>0.0.7</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <sourceDirectory>src/main/scala</sourceDirectory>
+        <testSourceDirectory>src/test/scala</testSourceDirectory>
+        <plugins>
+            <plugin>
+                <groupId>org.scala-tools</groupId>
+                <artifactId>maven-scala-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>compile</goal>
+                            <goal>testCompile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <jvmArgs>
+                        <jvmArg>-Xmx2024m</jvmArg>
+                    </jvmArgs>
+                    <scalaVersion>${scala.version}</scalaVersion>
+                    <args>
+                        <arg>-target:jvm-1.5</arg>
+                        <!--<arg>-verbose </arg>-->
+                    </args>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.2.1</version>
+                <configuration>
+                    <descriptorRefs>
+
+                        <descriptorRef>project</descriptorRef>
+                    </descriptorRefs>
+                    <descriptors>
+                        <!--<descriptor>src/main/assembly/dist.xml</descriptor>-->
+                    </descriptors>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-eclipse-plugin</artifactId>
+                <configuration>
+                    <downloadSources>true</downloadSources>
+                    <buildcommands>
+                        <buildcommand>ch.epfl.lamp.sdt.core.scalabuilder</buildcommand>
+                    </buildcommands>
+                    <additionalProjectnatures>
+                        <projectnature>ch.epfl.lamp.sdt.core.scalanature</projectnature>
+                    </additionalProjectnatures>
+                    <classpathContainers>
+                        <classpathContainer>org.eclipse.jdt.launching.JRE_CONTAINER</classpathContainer>
+                        <classpathContainer>ch.epfl.lamp.sdt.launching.SCALA_CONTAINER</classpathContainer>
+                    </classpathContainers>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.scala-tools</groupId>
+                <artifactId>maven-scala-plugin</artifactId>
+                <configuration>
+                    <scalaVersion>${scala.version}</scalaVersion>
+                </configuration>
+            </plugin>
+        </plugins>
+    </reporting>
+</project>

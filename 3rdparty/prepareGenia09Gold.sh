@@ -1,0 +1,20 @@
+#!/bin/bash
+
+HOME=`dirname $0`
+ADDLINKS=$HOME/addLinks.sh
+CORPORA=$1
+
+TRAIN=$CORPORA/training
+TEST=$CORPORA/test
+DEV=$CORPORA/development
+
+$ADDLINKS $TRAIN a1 .
+$ADDLINKS $TRAIN a2 .
+
+$ADDLINKS $TEST a1 .
+$ADDLINKS $TEST a2 .
+
+$ADDLINKS $DEV a1 .
+$ADDLINKS $DEV a2 .
+
+
