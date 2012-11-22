@@ -17,7 +17,11 @@ You also need to configure a few directory locations. Copy the example in `src/m
 
 # Preprocessing
 
-Before we train, we need to go through two preprocessing steps that prepare the data. First call
+Before we train, we need to go through two preprocessing steps that prepare the data. 
+
+## Data preprocessing
+
+First call
 
     $ mvn exec:exec -Dexec.executable="java" -Dexec.args="-Xmx1g -Dprop=props/example.prop  -cp %classpath cc.refectorie.proj.bionlp2011.ClearAnnotated"
 
@@ -26,6 +30,8 @@ to clear the database (this is actually only necessary if you want to rerun expe
     $ mvn exec:exec -Dexec.executable="java" -Dexec.args="-Xmx1g -Dprop=props/example.prop  -cp %classpath cc.refectorie.proj.bionlp2011.LowLevelAnnotation dev train test"
 
 This will add tokenize, sentence-split etc. the data specified in the prop file.
+
+## Feature preprocessing
 
 Next we run
 
