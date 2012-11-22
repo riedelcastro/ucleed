@@ -57,7 +57,7 @@ specified in the prop file.
 # Testing
 
 You can use the stored weights in a standalone tool that applies the complete preprocessing chain and the event
-extractor model to input files. For this first set `weightsSrc=weights/[epoch of choice]` in the prop file. Generally epoch 4 or 5 seems to give result, but can check what works best on the dev set. 
+extractor model to input files. For this first set `weightsSrc=weights/[epoch of choice]` in the prop file. Generally epoch 4 or 5 seems to give good results, but can check what works best on the dev set. 
 
 Then run the standalone tool as follows:
 
