@@ -63,7 +63,11 @@ Then run the standalone tool as follows:
 
     $ mvn exec:exec -Dexec.executable="java" -Dexec.args="-Xmx80g -Dprop=props/example.prop -cp %classpath cc.refectorie.proj.bionlp2011.UMassBioEventExtractor [txt file] [a1file] [destfile]"
 
+# Further Reading and Citations
 
-
+The most relevant citation for this work is our [EMNLP paper](http://riedelcastro.github.com/publications/details/riedel11fast.html).
+Further details can be found in our BioNLP shared task papers on 
+[system combination](http://riedelcastro.github.com/publications/details/riedel11model.html) and 
+[dual decomposition](http://riedelcastro.github.com/publications/details/riedel11robust.html).
 
 
