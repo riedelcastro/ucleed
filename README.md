@@ -7,6 +7,8 @@ Get maven, untar/unzip and then run
 
     $ mvn compile
 
+If it looks like dependencies cannot be found, first try [this]:(https://groups.google.com/a/factorie.cs.umass.edu/forum/?fromgroups=#!msg/discuss/7F8laYbmU-w/eFJJ_tlerrMJ). 
+
 ucleed stores preprocessed data in a mongo database. Hence you need to get mongo, and run the mongo server
 
     $ mongod
