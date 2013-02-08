@@ -17,6 +17,10 @@ You should also have an installation of the BioNLP reranking parser by David McC
 
 You also need to configure a few directory locations. Copy the example in `src/main/resources/props/example.prop` and modify as needed.
 
+## Setting up the syntactic parser
+
+ucleed uses the [reranking parser](https://bitbucket.org/bllip/bllip-parser/src) by David McClosky, in combination with his [Improved self-trained biomedical parsing model](http://nlp.stanford.edu/~mcclosky/biomedical.html). In the configuration file, set `rerankparser` to the main directory of the parser, and `biomodel` to the directory of the biomedical parsing model. 
+
 # Preprocessing
 
 Before we train, we need to go through two preprocessing steps that prepare the data. 
@@ -71,5 +75,6 @@ The most relevant citation for this work is our [EMNLP paper](http://riedelcastr
 Further details can be found in our BioNLP shared task papers on 
 [system combination](http://riedelcastro.github.com/publications/details/riedel11model.html) and 
 [dual decomposition](http://riedelcastro.github.com/publications/details/riedel11robust.html).
+
 
 
