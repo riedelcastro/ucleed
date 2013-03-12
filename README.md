@@ -19,7 +19,15 @@ You also need to configure a few directory locations. Copy the example in `src/m
 
 ## Setting up the syntactic parser
 
-ucleed uses the [reranking parser](https://bitbucket.org/bllip/bllip-parser/src) by David McClosky, in combination with his [Improved self-trained biomedical parsing model](http://nlp.stanford.edu/~mcclosky/biomedical.html). In the configuration file, set `rerankparser` to the main directory of the parser, and `biomodel` to the directory of the biomedical parsing model. 
+ucleed uses the [reranking parser](https://bitbucket.org/bllip/bllip-parser/src) by David McClosky, in combination with
+his [Improved self-trained biomedical parsing model](http://nlp.stanford.edu/~mcclosky/biomedical.html).
+In the configuration file, set `rerankparser` to the main directory of the parser, and `biomodel` to the directory
+of the biomedical parsing model. Note that for some odd reason, the recent versions of the bllip reranker expects
+bzip files and not the gzip files provided in the biomodel. You can fix this by calling
+
+    $ gunzip *.gz; bzip *
+
+in the `biomodel/reranker` directory.
 
 # Preprocessing
 
