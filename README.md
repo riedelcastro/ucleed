@@ -43,7 +43,7 @@ Next we run
 
     $ mvn exec:exec -Dexec.executable="java" -Dexec.args="-Xmx1g -Dprop=props/example.prop  -cp %classpath cc.refectorie.proj.bionlp2011.ClearAnnotated"
 
-to initialize learning (again only necessary if you want to retrain with newly preprocessed data). Then do:
+to initialize the feature preprocessing database. Then do:
 
     $ mvn exec:exec -Dexec.executable="java" -Dexec.args="-Xmx1g -Dprop=props/example.prop  -cp %classpath cc.refectorie.proj.bionlp2011.App dev train test"
 
