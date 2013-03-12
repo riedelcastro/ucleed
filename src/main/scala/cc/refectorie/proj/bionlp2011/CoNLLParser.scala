@@ -9,7 +9,7 @@ import cc.refectorie.proj.factorieie.data.{Token, Sentence, Document}
 /**
  * @author sriedel
  */
-class CoNLLParser(name: String = "conll", parseDir: File = Conf.get[File]("conllDir"),
+class CoNLLParser(name: String = "conll", parseDir: =>File = Conf.get[File]("conllDir"),
                   extension: String = ".tok.conll") extends Annotator with HasLogger {
 
   def findToken(sentence: Sentence, index: Int, word: String): Token = {

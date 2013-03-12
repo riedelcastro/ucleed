@@ -10,6 +10,9 @@ train:          /usr/dan/users8/riedel/vinci8_data1/projects/bionlp2011-st/data/
 test:           /usr/dan/users8/riedel/vinci8_data1/projects/bionlp2011-st/data/corpora/BioNLP-ST_2011_genia_test_data
 dev:            /usr/dan/users8/riedel/vinci8_data1/projects/bionlp2011-st/data/corpora/BioNLP-ST_2011_genia_devel_data_rev1
 
+#Maximum docs to load, make it small in this example
+maxDocs:        1
+
 #mcclosky parsing configuration
 rerankparser:   /usr/dan/users8/riedel/vinci8_data1/opt/reranking-parser
 biomodel:       /usr/dan/users8/riedel/vinci8_data1/opt/reranking-parser/biomodel

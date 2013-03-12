@@ -29,7 +29,7 @@ Before we train, we need to go through two preprocessing steps that prepare the 
 
 First call
 
-    $ mvn exec:exec -Dexec.executable="java" -Dexec.args="-Xmx1g -Dprop=props/example.prop  -cp %classpath cc.refectorie.proj.bionlp2011.ClearAnnotated"
+    $ mvn exec:exec -Dexec.executable="java" -Dexec.args="-Xmx1g -Dprop=props/example.prop  -cp %classpath cc.refectorie.proj.bionlp2011.ClearRaw"
 
 to clear the database (this is actually only necessary if you want to rerun experiments but it shouldn't hurt). Then do
 
@@ -41,7 +41,7 @@ This will add tokenize, sentence-split etc. the data specified in the prop file.
 
 Next we run
 
-    $ mvn exec:exec -Dexec.executable="java" -Dexec.args="-Xmx1g -Dprop=props/example.prop  -cp %classpath cc.refectorie.proj.bionlp2011.ClearLearningKB"
+    $ mvn exec:exec -Dexec.executable="java" -Dexec.args="-Xmx1g -Dprop=props/example.prop  -cp %classpath cc.refectorie.proj.bionlp2011.ClearAnnotated"
 
 to initialize learning (again only necessary if you want to retrain with newly preprocessed data). Then do:
 
@@ -51,9 +51,13 @@ This will prepare some candidate structures that are used during inference/learn
 
 # Learning
 
+Now copy data with features to the learning KB:
+
+    $ mvn exec:exec -Dexec.executable="java" -Dexec.args="-Xmx1g -Dprop=props/example.prop  -cp %classpath cc.refectorie.proj.bionlp2011.ClearLearningKB"
+
 Finally, you're ready to train the model
 
-    $ mvn exec:exec -Dexec.executable="java" -Dexec.args="-Xmx80g -Dprop=props/example.prop -cp %classpath cc.refectorie.proj.bionlp2011.BioNLPLearner"
+    $ mvn exec:exec -Dexec.executable="java" -Dexec.args="-Xmx8g -Dprop=props/example.prop -cp %classpath cc.refectorie.proj.bionlp2011.BioNLPLearner"
 
 This will store weights for different epochs into $UMASSDIR/weights/[epoch]
 

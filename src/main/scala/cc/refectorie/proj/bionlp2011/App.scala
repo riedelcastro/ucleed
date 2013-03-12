@@ -245,7 +245,7 @@ class BioNLPLoader(dir: File, tag: String, filter: Seq[File] => Seq[File] = iden
       val doc = kb.createDocument(txtFile.getAbsolutePath)
       doc.source = normalized
       doc.tags += tag
-      doc.persist
+      //doc.persist
       doc
     }
   }
